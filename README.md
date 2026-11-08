@@ -12,6 +12,27 @@ NHSE-Mac 是一款基于 [NHSE](https://github.com/kwsch/NHSE) 开发的 macOS�
 >
 > 请下载 Releases 页面中的程序压缩包，而非源代码压缩包。
 
+## 🖼️ 软件预览 | Screenshots
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/c7ab53e4-ad7f-48d6-ab89-06244df4ec11" alt="NHSE-Mac Screenshot 1" width="100%">
+    </td>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/dfcc9eb5-df05-49f2-bc06-5fd3b76b4586" alt="NHSE-Mac Screenshot 2" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/3b9b8820-e560-414f-aedf-3f6909c2fc22" alt="NHSE-Mac Screenshot 3" width="100%">
+    </td>
+    <td width="50%">
+      <img src="https://github.com/user-attachments/assets/0bcc0d35-5c35-47b7-b59b-2fe9858d9648" alt="NHSE-Mac Screenshot 4" width="100%">
+    </td>
+  </tr>
+</table>
+
 ## ✨ 主要功能
 
 - **macOS 支持** — 直接在 Mac 上编辑游戏存档。
