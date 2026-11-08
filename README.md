@@ -43,38 +43,65 @@ NHSE-Mac 是一款基于 [NHSE](https://github.com/kwsch/NHSE) 开发的 macOS�
 - **DIY 配方** — 管理已解锁的 DIY 配方。
 - **存档管理** — 读取、编辑和导出存档，提供备份提醒。
 
+## 🚀 安装与使用 | Installation & Usage
+
+### 简体中文
+
+1. 从 Releases 下载 `NHSE-Mac-v0.1.0-macOS-arm64.zip`。
+2. 解压 ZIP 文件。
+3. 双击 `start.command` 启动 NHSE-Mac。
+4. 读取、编辑并导出《集合啦！动物森友会》存档。
+
+> 📁 **存档说明：** 请选择包含 `main.dat` 和 `mainHeader.dat` 的整个存档文件夹，而不是单独选择其中某个文件。
+
+### English
+
+1. Download `NHSE-Mac-v0.1.0-macOS-arm64.zip` from Releases.
+2. Extract the ZIP file.
+3. Double-click `start.command` to launch NHSE-Mac.
+4. Load, edit, and export your Animal Crossing: New Horizons save data.
+
+> 📁 **Save Data:** Select the entire save folder containing `main.dat` and `mainHeader.dat`, rather than selecting an individual file.
+
+## ⚠️ 启动问题 | Troubleshooting
+
+### 简体中文
+
+如果 macOS 阻止程序启动，请先检查 **系统设置 → 隐私与安全性**。
+
+如果出现 `library load disallowed by system policy` 错误，可能是 macOS 阻止加载附带的 .NET 运行环境。
+
+确认文件来源可信后，打开终端执行：
+
+```bash
+xattr -dr com.apple.quarantine "/path/to/NHSE-Mac"
+```
+
+将 `/path/to/NHSE-Mac` 替换为软件文件夹的实际路径。
+
+### English
+
+If macOS blocks the application, check **System Settings → Privacy & Security** first.
+
+If you encounter `library load disallowed by system policy`, macOS may be blocking the bundled .NET runtime.
+
+After verifying the files are trustworthy, open Terminal and run:
+
+```bash
+xattr -dr com.apple.quarantine "/path/to/NHSE-Mac"
+```
+
+Replace `/path/to/NHSE-Mac` with the actual folder path.
+
 ---
+
+> ⚠️ **注意事项 | Note**
+>
+> - 修改存档前，请务必备份原始文件。
+> - Always back up your original save files before editing.
 
 ## 📖 English
 
 **A macOS-friendly save editor for Animal Crossing: New Horizons.**
 
-NHSE-Mac is a macOS save editor for *Animal Crossing: New Horizons*, built upon the [NHSE](https://github.com/kwsch/NHSE) project. It provides a simple and intuitive way to manage and edit game save data without requiring Windows.
-
-### 📦 Download
-
-Download the latest version from [GitHub Releases](https://github.com/Augenstern1120/NHSE-Mac/releases/latest).
-
-> ⚠️ **Note**
->
-> Download the release package, not the source code ZIP.
-
-### ✨ Features
-
-- **macOS Support** — Edit game saves directly on your Mac.
-- **Player Editing** — View and modify player information.
-- **Island Editing** — Manage island-related save data.
-- **Villager Management** — View and edit villagers, including personalities, catchphrases, and move-out status.
-- **Inventory Editing** — Modify inventory items.
-- **DIY Recipes** — Manage unlocked DIY recipes.
-- **Save Management** — Load, edit, and export saves with backup reminders.
-
----
-
-## 🙏 项目致谢 | Credits
-
-基于 [NHSE](https://github.com/kwsch/NHSE) 开发，感谢 **kwsch、berichan 及所有贡献者**。
-
-Based on [NHSE](https://github.com/kwsch/NHSE). Special thanks to **kwsch, berichan, and all contributors**.
-
-**开源许可证 | License：** GPL-3.0
+NHSE-Mac is a macOS save editor based on [NHSE](https://github.com/kwsch/NHSE), featuring a graphical interface for managing and editing Animal Crossing: New Horizons save data without Windows.
