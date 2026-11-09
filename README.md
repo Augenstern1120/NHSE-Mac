@@ -33,6 +33,19 @@ NHSE-Mac 是一款基于 [NHSE](https://github.com/kwsch/NHSE) 开发的 macOS�
   </tr>
 </table>
 
+## ⚠️ 启动问题 | Troubleshooting
+
+### 简体中文
+
+**如果 macOS 提示应用无法验证、已损坏或建议“移到废纸篓”，或者启动时出现 library load disallowed by system policy 错误，可能与系统安全检查或下载文件的隔离属性有关。**
+
+可在终端执行：
+
+```bash
+xattr -dr com.apple.quarantine "/path/to/NHSE-Mac"
+```
+即可解决。
+
 ## ✨ 主要功能
 
 - **macOS 支持** — 直接在 Mac 上编辑游戏存档。
